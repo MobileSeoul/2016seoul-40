@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 정태훈 -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner" />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="1" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/searchListView" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>

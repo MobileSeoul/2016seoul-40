@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/ivPoster"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#4664F8" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

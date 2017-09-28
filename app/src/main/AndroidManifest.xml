@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ssangyong.dclass.seoulexploration">
+
+    <permission
+        android:name="ssangyong.dclass.seoulexploration.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- GPS, 기지국을 이용해 위치정보 받기 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 구글맵 API v2의 권한 설정 -->
+    <uses-permission android:name="ssangyong.dclass.seoulexploration.permission.MAPS_RECEIVE" />
+
+    <!-- 구글맵 API v2의 일반 권한 설정. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- 일반 권한 설정 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 전화 권한 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key"/>
+        <!-- 라이브러리 사용 설정 -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- 구글맵 API v2 키 설정 -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDE5IKdc6y62e_AoodaH9dO379d1lwbDsI" />
+
+        <!-- GMS 라이브러리 버전 설정 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 진동 설정 -->
+        <!--<uses-permission android:name="android.permission.VIBRATE"></uses-permission>-->
+
+        <activity
+            android:name=".activity.LoadActivity"
+            android:theme="@style/LoadingTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/kakao_scheme"
+                    android:host="@string/kakaolink_host"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.CurrentPositionActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.TourPickActivity" />
+        <activity android:name=".activity.MypageActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.TourListActivity" />
+        <activity android:name=".activity.TreasureListActivity" />
+        <activity android:name=".activity.MedalListActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity android:name=".activity.AddAreaActivity" />
+        <activity android:name=".activity.VisitAreaActivity"/>
+        <activity android:name=".activity.TourInfoActivity"/>
+        <activity android:name=".activity.InfoActivity"/>
+
+        <service
+            android:name=".ProximityService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+    </application>
+
+</manifest>

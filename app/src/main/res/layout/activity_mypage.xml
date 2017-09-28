@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--작성자 : 정태훈 -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+
+    >
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onButtonClick1"
+        android:background="@drawable/tourlistbutton"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onButtonClick2"
+        android:background="@drawable/getbutton"
+
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onButtonClick3"
+        android:background="@drawable/medalbutton"
+       />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

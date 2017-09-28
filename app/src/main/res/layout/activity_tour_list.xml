@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--작성자 : 정태훈 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/succesbutton"
+        android:id="@+id/button1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+
+        android:onClick="onButtonClick1" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/addbutton"
+        android:layout_weight="0.03"
+        android:onClick="onButtonClick2" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

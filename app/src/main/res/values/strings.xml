@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">서울관광 탐험가</string>
+    <string name="title_activity_image_view">ImageView</string>
+    <string name="title_activity_clrea_area">ClreaAreaActivity</string>
+
+
+    <!--메뉴페이지-->
+    <string name="tour_pick">관광지고르기</string>
+    <string name="mypage_button">마이페이지</string>
+    <string name="menu_button">관리자 테스트용</string>
+
+    <!--메뉴-->
+    <string name="tourinfo">관광안내소</string>
+    <string name="info">출처</string>
+
+    <!--마이페이지-->
+    <string name="tour_list">관광지 리스트</string>
+    <string name="treasure_list">유물 리스트</string>
+    <string name="medal_list">감사패</string>
+
+    <!--검색-->
+    <string name="input_search">검색어 입력</string>
+    <string name="search">검색</string>
+
+    <!--관광지 리스트-->
+    <string name="visit_area">다녀온지역</string>
+    <string name="add_area">추가한지역</string>
+
+    <!--관광지 선택하기-->
+    <string name="current">현재위치에서 선택하기</string>
+    <string name="category">카테고리로 선택하기</string>
+
+    <!--출처-->
+    <string name="provide_t">여행지 정보 제공</string>
+    <string name="provide_r">유물 사진 제공</string>
+    <string name="culture">문화재청</string>
+    <string name="myname">정태훈, 박종익, 김훈영, 박보현, 이조은</string>
+
+    <!--관광안내소-->
+    <string name="tourinfoname">안내소명</string>
+    <string name="tourinfonum">전화번호</string>
+    <string name="itaewon">이태원</string>
+    <string name="itaewonnum">02-3785-0942\n 02-749-9221</string>
+    <string name="samilgyo">삼일교</string>
+    <string name="samilgynum">02-720-0872</string>
+    <string name="gwanghwamun">광화문</string>
+    <string name="gwanghwamunnum">02-735-8688</string>
+    <string name="seoul_citizens_hall">시민청</string>
+    <string name="seoul_citizens_hallnum">02-739-7755</string>
+    <string name="dongdaemun">동대문</string>
+    <string name="dongdaemunnum">02-2236-9135</string>
+    <string name="namdaemun">남대문시장</string>
+    <string name="namdaemunnum">02-752-1913</string>
+    <string name="jamsil">잠실</string>
+    <string name="jamsilnum">02-3431-9472</string>
+    <string name="ddp">DDP</string>
+    <string name="ddpnum">02-2153-0407</string>
+    <string name="sinchon_subwaystation">신촌역</string>
+    <string name="sinchon_subwaystationnum">02-363-7833</string>
+    <string name="hongik_university">홍대입구</string>
+    <string name="hongik_universitynum">02-323-2240</string>
+    <string name="incheon_airport">인천공항관광정보센터</string>
+    <string name="incheon_airportnum">032-743-3270</string>
+    <string name="myeongdong">명동관광정보센터</string>
+    <string name="myeongdongnum">02-778-0333</string>
+    <string name="gimpo">김포공항관광정보센터</string>
+    <string name="gimponum">02-2660-2486</string>
+
+    <string name="korea_tourist_service">관광공사 안내소</string>
+    <string name="korea_tourist_servicenum">02-729-9488</string>
+    <string name="mapo">마포관광정보센터</string>
+    <string name="maponum">02-334-7878</string>
+    <string name="seoulglobal">서울글로벌문화체험센터</string>
+    <string name="seoulglobalnum">02-3789-7961</string>
+    <string name="gangnam">강남관광정보센터</string>
+    <string name="gangnamnum">02-3445-0111</string>
+    <string name="seocho">서초관광정보센터</string>
+    <string name="seochonum">02-348-1261</string>
+    <string name="songpa">송파관광정보센터</string>
+    <string name="songpanum">02-421-0970~1</string>
+    <string name="naminsa">남인사 관광안내소</string>
+    <string name="naminsanum">02-737-7885</string>
+    <string name="bukinsa">북인사 관광안내소</string>
+    <string name="bukinsanum">02-734-0222</string>
+    <string name="bukchon_jaedong">북촌 재동관광안내소</string>
+    <string name="bukchon_jaedongnum">02-2148-4160</string>
+    <string name="bukchon_jeongdok">북촌 정독관관안내소</string>
+    <string name="bukchon_jeongdoknum">02-2148-4161</string>
+    <string name="insadong">인사동 홍보관</string>
+    <string name="insadongnum">02-737-7890</string>
+    <string name="gyeongbokgung">경복궁 관광통역안내소</string>
+    <string name="gyeongbokgungnum">02-738-9171</string>
+    <string name="myeongdong_center">명동 관광통역안내소</string>
+    <string name="myeongdong_centernum">02-774-3238</string>
+    <string name="itaewon_center">이태원 관광통역안내소</string>
+    <string name="itaewon_centernum">02-794-5579</string>
+
+
+
+
+
+
+
+</resources>

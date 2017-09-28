@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?><!--작성자 : 정태훈 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/detail_imageview"
+                    android:src="@drawable/lodding"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/nameicon" />
+
+                        <TextView
+                            android:id="@+id/textName"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" " />
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/naver_icon"
+                            android:onClick="onButton_naver" />
+
+
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+
+
+                        <Button
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@drawable/add"
+                            android:onClick="onAddButtonClick" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/themaicon" />
+
+                        <TextView
+                            android:id="@+id/textTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text=" " />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/stateicon"
+                            />
+
+                        <TextView
+                            android:id="@+id/textArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text=" " />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/timeicon"
+                            android:background="@drawable/timeicon"/>
+
+                        <TextView
+                            android:id="@+id/textTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text=" " />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/phoneicon"
+                            android:background="@drawable/phoneicon"/>
+
+                        <TextView
+                            android:id="@+id/textPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:onClick="onButton_Call"
+                            android:text=" " />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/trafficeicon"
+                            android:background="@drawable/trafficeicon"/>
+
+                        <TextView
+                            android:id="@+id/textTraffic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:text=" " />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!--                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="방문완료 (테스트용)"
+                                    android:onClick="onAddButtonClick2" />
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="삭제 (테스트용)"
+                                    android:onClick="onAddButtonClick3" />-->
+
+            </LinearLayout>
+
+
+
+
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="287dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--   <android.support.design.widget.CoordinatorLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fitsSystemWindows="true">
+
+           <android.support.design.widget.FloatingActionButton
+               android:id="@+id/plusBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom|end"
+               android:layout_marginBottom="30dp"
+               android:layout_marginRight="30dp"
+               android:src="@drawable/plusicon"
+               android:background="#ffffffff"
+               android:backgroundTint="#ffffffff"
+               android:onClick="onClickPlus"/>-
+
+       </android.support.design.widget.CoordinatorLayout>-->
+
+
+</FrameLayout>

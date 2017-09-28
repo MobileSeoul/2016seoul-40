@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?><!--작성자 : 이조은 -->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:nestedScrollingEnabled="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/tourinfo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:text="@string/tourinfo"
+            android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView android:text="@string/tourinfoname"/>
+                <TextView android:text="@string/tourinfonum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/itaewon"/>
+                <TextView android:text="@string/itaewonnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/samilgyo"/>
+                <TextView android:text="@string/samilgynum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/gwanghwamun"/>
+                <TextView android:text="@string/gwanghwamunnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/seoul_citizens_hall"/>
+                <TextView android:text="@string/seoul_citizens_hallnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/dongdaemun"/>
+                <TextView android:text="@string/dongdaemunnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/namdaemun"/>
+                <TextView android:text="@string/namdaemunnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/jamsil"/>
+                <TextView android:text="@string/jamsilnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/ddp"/>
+                <TextView android:text="@string/ddpnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/sinchon_subwaystation"/>
+                <TextView android:text="@string/sinchon_subwaystationnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/hongik_university"/>
+                <TextView android:text="@string/hongik_universitynum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/incheon_airport"/>
+                <TextView android:text="@string/incheon_airportnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/myeongdong"/>
+                <TextView android:text="@string/myeongdongnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/gimpo"/>
+                <TextView android:text="@string/gimponum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/korea_tourist_service"/>
+                <TextView android:text="@string/korea_tourist_servicenum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/mapo"/>
+                <TextView android:text="@string/maponum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/seoulglobal"/>
+                <TextView android:text="@string/seoulglobalnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/gangnam"/>
+                <TextView android:text="@string/gangnamnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/seocho"/>
+                <TextView android:text="@string/seochonum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/songpa"/>
+                <TextView android:text="@string/songpanum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/naminsa"/>
+                <TextView android:text="@string/naminsanum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/bukinsa"/>
+                <TextView android:text="@string/bukinsanum"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="@string/bukchon_jaedong"/>
+                <TextView android:text="@string/bukchon_jaedongnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/bukchon_jeongdok"/>
+                <TextView android:text="@string/bukchon_jeongdoknum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/insadong"/>
+                <TextView android:text="@string/insadongnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/gyeongbokgung"/>
+                <TextView android:text="@string/gyeongbokgungnum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/myeongdong_center"/>
+                <TextView android:text="@string/myeongdong_centernum"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="@string/itaewon_center"/>
+                <TextView android:text="@string/itaewon_centernum"/>
+            </TableRow>
+
+        </TableLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/slidingMenuPage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#886a6b6d"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:text="@string/tourinfo"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/TourInfoBtn"
+                android:onClick="onClickTourInfoBtn" />
+
+
+            <Button
+                android:text="@string/info"
+                android:background="#ffffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InfoBtn"
+                android:onClick="onClickInfoBtn"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:text=""
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/backBtn"
+                android:onClick="onClickBack"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
